@@ -1,0 +1,40 @@
+.img_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_container .hero_image {
+  object-fit: fill;
+  border-radius: 10px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+}
+.btn_next {
+  border-radius: 50px;
+  height: 3rem;
+  width: 6rem;
+  margin-top: 50px;
+  margin-left: 31%;
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none; /* Remove default button border */
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1); /* Box shadow */
+  transition: box-shadow 0.3s ease; /* Add transition effect */
+}
+
+.btn_next:hover {
+  background-color: grey;
+
+  box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+}
+
+@media only screen and (max-width: 600px) {
+  .img_container .hero_image {
+    width: 100%;
+  }
+}
